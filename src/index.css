@@ -33,3 +33,21 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+/* insideHome */
+.insideHome{
+  padding: 20px 10px;
+  margin: 20px 0;
+  border: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+.insideHome h3{
+  padding: 10px 0px;
+  font-size: 20px;
+  color: #f1356d;
+}
+
+.Method :hover{
+  background-color: rgb(231, 214, 227);
+}
