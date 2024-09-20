@@ -1,23 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Method from "./method";
+import useFetch from "./useFetch";
 
 
 
 const Homepage = () => {
-    const [object, setObject] = useState([
-        { title: "god of war", creator: "hethm", rubish: "rubishh", id: 1 },
-        { title: "darksiders", creator: "taqi", rubish: "rubishh", id: 2 },
-        { title: "dishonored", creator: "ali", rubish: "rubishh", id: 3 },
-        { title: "call of duty", creator: "noor", rubish: "rubishh", id: 4 }
-    ]);
-  const  deletefun = (id) =>{
-    const newArr = object.filter(ob =>ob.id !== id) ;
-        setObject(newArr) ;
-    };
+
+    const {object,isLoding ,err} = useFetch('http://localhost:8000/Data')
 
     return (  
         <div className="Home">
-            <Method object={object} deletefun={deletefun} /> 
+            {err && <div className="err">{err}</div>}
+            {isLoding && <div className="loding"> Loding ....</div>}
+           {object &&<Method object={object}/>} 
         </div>
     );
 }
