@@ -1,8 +1,28 @@
 {
-    "Data" : [
-    {"id":1, "title": "god of war", "creator": "hethm", "rubish": "rubishh" },
-    { "id": 2 ,"title": "darksiders", "creator": "taqi", "rubish": "rubishh" },
-    { "id": 3 ,"title": "dishonored", "creator": "ali", "rubish": "rubishh" },
-    { "id": 4 ,"title": "call of duty", "creator": "noor", "rubish": "rubishh" }
-    ]
+  "Data": [
+    {
+      "id": "1",
+      "title": "god of war",
+      "creator": "hethm",
+      "rubish": "rubishh"
+    },
+    {
+      "id": "2",
+      "title": "darksiders",
+      "creator": "taqi",
+      "rubish": "rubishh"
+    },
+    {
+      "id": "3",
+      "title": "dishonored",
+      "creator": "ali",
+      "rubish": "rubishh"
+    },
+    {
+      "id": "4",
+      "title": "call of duty",
+      "creator": "noor",
+      "rubish": "rubishh"
+    }
+  ]
 }
